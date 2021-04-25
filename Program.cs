@@ -1,20 +1,15 @@
 ﻿using BenchmarkDotNet.Running;
+using csharp_benchmarks;
 
-namespace csharp_benchmarks
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
 
-            var results = BenchmarkRunner.Run<StringReplaceTest>();
 
-            //BenchmarkSwitcher
-            //.FromAssembly(typeof(Program).Assembly)
-            //.Run(args,
-            //    DefaultConfig.Instance
-            //        .With(new EtwProfiler()));
-            //var results = BenchmarkRunner.Run<StringReplaceTest>();
-        }
-    }
-}
+//BenchmarkRunner.Run<StringReplaceTest>();
+
+var result = BenchmarkRunner.Run<ForeachVsForTest>();
+
+//BenchmarkSwitcher
+//.FromAssembly(typeof(Program).Assembly)
+//.Run(args,
+//    DefaultConfig.Instance
+//        .With(new EtwProfiler()));
+//var results = BenchmarkRunner.Run<StringReplaceTest>();
