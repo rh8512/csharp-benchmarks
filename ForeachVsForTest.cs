@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace csharp_benchmarks
 {
-    [SimpleJob(RunStrategy.Throughput, launchCount: 1)]
+    [SimpleJob(RunStrategy.Throughput, launchCount: 5)]
     public class ForeachVsForTest
     {
         [Params(1000, 10000)]
@@ -33,6 +33,7 @@ namespace csharp_benchmarks
         {
             for (int i = 0; i < appointmentsArray.Length; i++)
             {
+                //appointmentsArray[i] = new Appointment(); //creation of a new object / change of references / etc. 
                 Console.WriteLine(appointmentsArray[i].ServiceName);
             }
         }
