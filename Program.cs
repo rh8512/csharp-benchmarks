@@ -2,4 +2,4 @@
 using csharp_benchmarks;
 
 
-_ = BenchmarkRunner.Run<NestedForeachVsSelectMany>();
+_ = BenchmarkRunner.Run<IntParseVsTryParseTest>();
