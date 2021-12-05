@@ -7,7 +7,7 @@ using System.Text.RegularExpressions;
 
 namespace csharp_benchmarks
 {
-    [SimpleJob(RunStrategy.Throughput, launchCount: 1)]
+    //[SimpleJob(RunStrategy.Throughput, launchCount: 1)]
     public class StringReplaceTest
     {
         const string shortString = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin orci massa, gravida at felis ac, hendrerit ";
